@@ -1,0 +1,96 @@
+COMMANDERS FLOOR — KANAL KURULUMU
+==================================
+
+Takim: Washington Commanders | Stadyum: Northwest Stadium
+Kadro 2026 sezonuna gore: Jayden Daniels, Terry McLaurin, Stefon Diggs,
+Austin Ekeler, Frankie Luvu, Daron Payne — bas antrenor Dan Quinn,
+genel menajer Adam Peters.
+
+NOT: Stadyumun adi artik FedExField degil, Northwest Stadium.
+
+Paket Patriots Floor ile ayni, yani yeni ozelliklerin hepsi iceride:
+havuz ornekleme, sahne cesitliligi, muzik duzeltmeleri.
+
+Depoyu actin: Commanders-Floor. Icinde README var, yani push ederken
+"unrelated histories" hatasi cikacak — cozumu ADIM 3'te.
+
+
+SAKATLIK NOTU
+-------------
+Kadroya sakatlik listesindeki birkac ismi de kattim (Laremy Tunsil,
+Jer'Zhan Newton, Leo Chenal, Trey Amos). Hala takimin oyuncusu ve
+videolarda konusulacaklar; liste zaten sadece Wikimedia'dan fotograf
+cekmek icin kullaniliyor.
+
+
+ADIM 1 — BILGISAYARINA INDIR
+----------------------------
+github.com/ketuilebaksen/Commanders-Floor -> Code -> Open with GitHub Desktop
+
+
+ADIM 2 — DOSYALARI KOPYALA
+--------------------------
+Bu zip'in icindekileri (OKU.txt haric) o klasore kopyala.
+
+Klasorde su kalmali:
+  .git  .github  assets  content  scripts  .gitignore  channel.json
+
+.github ve content Windows'ta gizli gorunebilir — "Hidden items" kutusunu ac.
+
+GitHub Desktop -> Summary: "ilk kurulum" -> Commit to main
+
+
+ADIM 3 — PUSH (README yuzunden)
+-------------------------------
+Push origin'e basinca "Unable to merge unrelated histories" ya da
+"Newer commits on remote" diyecek. Pull / Fetch'e BASMA, Cancel de.
+
+Repository -> Open in Command Prompt   (Ctrl + `)
+
+  git push --force origin main
+
+Enter. Sonra GitHub Desktop'ta Ctrl + R ile yenile.
+
+Uzaktaki depoda tek commit var, icinde sadece README.md — kontrol ettim,
+kaybolacak bir sey yok.
+
+
+ADIM 4 — IZIN (sart)
+--------------------
+Settings -> Actions -> General -> en altta "Workflow permissions"
+"Read and write permissions" sec -> Save
+
+Bu olmadan video render edilir ama Release'e yuklenemez.
+
+
+ADIM 5 — STOK VIDEOLAR
+----------------------
+Releases -> Create a new release
+  Tag / Title : broll
+  Dosya       : Commanders stok videolarini surukle
+  ---> "Publish release"   ("Save draft" e BASMA)
+
+Dolunca broll2, broll3 diye devam et, sistem hepsini tek havuz sayiyor.
+Istege bagli:  music   ambient   photos
+
+music'e hem mp3 hem wav atabilirsin, sistem kopyalari birlestiriyor.
+
+
+ADIM 6 — ILK VIDEO
+------------------
+Ses otomasyonunda kanal listesine ekle, depo adi: Commanders-Floor
+
+Render kaydinda goreceklerin:
+  STOK HAVUZU: ... klipten 320 tanesi bu video icin secildi
+  [assemble] sahne cesitliligi: ... farkli cekim ailesi
+  [assemble] music bed: ... parca, ... kez eklendi
+  [assemble] DONE -> work/final.mp4
+
+"b-roll: 0 clips" yaziyorsa broll release'i taslakta kalmis demektir.
+
+
+ISTEGE BAGLI — TEK OYUNCUYA OZEL HAVUZ
+--------------------------------------
+  Release tag : oyuncu-jayden-daniels  (ya da takim-washington-commanders)
+  Icine en az 12 klip koy, Publish et.
+Metinde o isim en cok geciyorsa video sadece o havuzdan kurulur.
